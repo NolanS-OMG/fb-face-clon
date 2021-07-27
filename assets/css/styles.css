@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --logo-font-color: #0059ff ;
+}
+
+@font-face {
+    font-family: logo;
+    src: url('../fonts/fb-logo.ttf');
+}
+
+img {
+    width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.logo-container {
+    margin: 0%;
+}
+
+.logo-container h1 {
+    font-family: logo;
+    color: var(--logo-font-color);
+    font-size: 1.8rem;
+}
+
+.icons-container {
+    width: 23%;
+    margin: 0%;
+}
+
+.icons-container button {
+    width: 40%;
+    margin: auto;
+    border: none;
+    border-radius: 50%;
+}
+
+.icons-container button img {
+    padding: 15%;
+}
+
+.nav-container {
+    margin: 0%;
+    border-bottom: solid 1px #cccccc;
+}
+
+.nav-container div {
+    width: 16.5%;
+    padding-bottom: 1%;
+    margin: auto;
+}
+
+.nav-container div img {
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.selected-icon {
+    border-bottom: 3px solid var(--logo-font-color);
+}
