@@ -13,6 +13,11 @@
     src: url('../fonts/fb-logo.ttf');
 }
 
+@font-face {
+    font-family: texts;
+    src: url('../fonts/Neo\ Sans\ Std\ Regular.otf');
+}
+
 img {
     width: 100%;
 }
@@ -21,14 +26,27 @@ h1,h2,h3,h4,h5,h6 {
     text-decoration: none;
 }
 
+p,span {
+    font-family: sans-serif;
+}
+
+span {
+    font-size: 0.8rem;
+    color: gray;
+}
+
 body {
     background-color: white;
     color: black;
+    position: relative;
 }
 
 header {
     display: flex;
     flex-direction: column;
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
 
 header div {
@@ -63,7 +81,7 @@ header div {
 }
 
 .icons-container button img {
-    padding: 15%;
+    padding: 20%;
 }
 
 .nav-container {
@@ -87,4 +105,120 @@ header div {
 
 .selected-icon {
     border-bottom: 3px solid var(--logo-font-color);
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+    border-bottom: 7px solid rgb(187, 187, 187) ;
+}
+
+.profile-container {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.profile-photo-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-photo {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo img {
+    border-radius: 50%;
+}
+
+.profile-text-container {
+    width: 82%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-text-container p {
+    font-size: 1rem;
+    color: black;
+}
+
+.options-image-container {
+    width: 7%;
+}
+
+.content-container {
+    width: 95%;
+    margin: auto;
+}
+
+.content-container p {
+    line-height: 1.2rem;
+}
+
+.reactions-counter-container {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    border-bottom: 1px solid rgb(180, 180, 180);
+}
+
+.likes-container {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.likes-container img {
+    width: 80%;
+}
+
+.reactions-options-container {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.reactions-options-container div {
+    width: 20%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reactions-options-container div img {
+    width: 30%;
+}
+
+.reactions-options-container div span {
+    width: 65%;
+    font-size: 0.7rem;
+}
+
+.video-container {
+    width: 100%;
+}
+
+.video-container video {
+    width: 100%;
 }
